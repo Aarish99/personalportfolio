@@ -1,155 +1,160 @@
-body {
-  color: #40514E;
-  margin: 0;
-  text-align: center;
-  /*This will center everything inside the body */
-  font-family: 'Merriweather', serif;
+
+/**********************CONTAINER******************************************/
+
+.container-fluid{
+  padding: 7% 15%;
 }
 
-h1 {
-  margin: 50px auto 0 auto;
-  /*when making something 0, you do not have to specify the unit therefore you leave it as 0 instead of 0px*/
-  /*The margin means that top and bottom are 0, while left and right are auto to maintain it at the center of display*/
-  font-family: 'Sacramento', cursive;
-  font-size: 5.625rem;
-  /*Always use rem*/
-  /*1em=16px, 16px=100%*/
-  color: #66BFBF;
-  line-height: 2;
+/**********************NAVIGATION BAR******************************************/
+#header {
+  background-color:#FFFAFA;
+  color: #fff;
+
 }
 
-h2 {
-  font-family: 'Montserrat', sans-serif;
+#header .container-fluid {
+  padding: 1% 10% 1%;
+}
+
+
+.navbar {
+  padding: 0 1rem 1rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
   font-size: 2.5rem;
-  color: #66BFBF;
-  font-weight: normal;
-  padding-bottom: 10px;
+  font-weight: bold;
 }
 
-h3 {
-  color: #11999E;
-  font-family: 'Montserrat', sans-serif;
+.nav-item {
+  padding: 0 18px;
 }
 
-p {
-  line-height: 2;
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
 }
 
-hr {
-  border: dotted #EAF6F6 15px;
-  border-bottom: none;
-  width: 15%;
-  margin: 100px auto;
+/**********************HOME PAGE******************************************/
+#home-page {
+  background-color:#E6E6FA;
+
 }
 
-a {
-  color: #1199E;
-  font-family: 'Montserrat', sans-serif;
-  margin: 10px 20px;
-  text-decoration: none;
+.introduction{
+  padding-top: 10%;
 }
 
-a:hover{
-  color: #EAF6F6;
-}
-.top-container {
-  /*In order to pick out a class, you have to add a . before the identifier */
-  background-color: #E4F9F5;
-  position: relative;
-  padding-top: 100px;
-  /*This will make the text move down by 100px */
+.download-button {
+  margin: 5% 3% 5% 0;
 }
 
-.middle-container {
-  margin: 100px 0;
-  /*This means 100px for top and bottom, and 0 for left and right*/
+.home-image{
+  padding-left: 3%;
+  width: 95%;
+  background-color: #E6E6FA;
 }
 
-.bottom-container {
-  background-color: #66BFBF;
-  padding: 50px 0 20px;
+.big-heading {
+  font-size: 3.5rem;
 }
 
-.skill-row {
-  width: 50%;
-  margin: 100px auto 150px auto;
-  text-align: left;
+.intro-heading{
+  font-size: 1.5rem;
 }
 
-.data {
-  text-decoration: underline;
+/**********************ABOUT ME******************************************/
+#about-me{
+    background-color:#FFFAFA;
 }
 
-.intro {
-  width: 30%;
-  margin: auto;
-  padding-bottom: 10px;
-}
 
-.contact-message {
-  width: 40%;
-  margin: 40px auto 60px;
-}
-
-.top-cloud {
+.about-img {
+  padding-top: 3%;
+  width: 65%;
   position: absolute;
-  right: 400px;
-  top: 40px;
+  right: 20%;
+  border-radius: 65%
 }
 
-.bottom-cloud {
-  position: absolute;
-  left: 400px;
-  bottom: 300px;
+/**********************TESTIMONIALS******************************************/
+#testimonials{
+  padding: 5% 7%;
+  background-color:#E6E6FA;
+  color: black;
 }
 
-.data-img {
-  width: 25%;
+
+.testimonial-text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.container-fluid{
+  padding: 7% 15%;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
   float: left;
-  margin-right: 30px;
-  
 }
 
-.it-img {
-  width: 25%;
-  float: right;
-  margin-left: 30px;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
 }
 
-.web-img {
-  width: 25%;
-  float: left;
-  margin-right: 30px;
-
-.btn {
-  background: #11CDD4;
-  background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
-  background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
-  background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
-  background-image: -o-linear-gradient(top, #11CDD4, #11999E);
-  background-image: linear-gradient(to bottom, #11CDD4, #11999E);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
 }
 
-.btn:hover {
-  background: #30E3CB;
-  background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
-  background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
-  background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
-  background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
-  background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
-  text-decoration: none;
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
 }
 
-.copyright{
-  color: #EAf6F6;
-  font-size: 0.75rem;
-  padding: 20px 0;
+/**********************CALL TO ACTION******************************************/
+#call-to-action{
+  text-align: center;
+  background-color:#FFFAFA;
+}
+
+/**********************FOOTER******************************************/
+#footer{
+  text-align: center;
+  background-color: #E6E6FA;
+}
+
+.logo{
+  margin-left: 1%;
+}
+
+@media (max-width: 1000px) {
+
+
+  .home-image {
+    position: static;
+
+
+  }
+
+  #about-me{
+    text-align: center;
+  }
+.about-img{
+  position:static;
+}
+
+
 }
